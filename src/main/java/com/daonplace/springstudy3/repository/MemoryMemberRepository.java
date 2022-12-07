@@ -1,6 +1,7 @@
 package com.daonplace.springstudy3.repository;
 
 import com.daonplace.springstudy3.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 

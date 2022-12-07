@@ -2,6 +2,8 @@ package com.daonplace.springstudy3.service;
 
 import com.daonplace.springstudy3.domain.Member;
 import com.daonplace.springstudy3.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
