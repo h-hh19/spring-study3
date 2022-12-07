@@ -2,13 +2,17 @@ package com.daonplace.springstudy3.service;
 
 import com.daonplace.springstudy3.domain.Member;
 import com.daonplace.springstudy3.repository.MemberRepository;
-import com.daonplace.springstudy3.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
+
 
     /*
     * 회원가입
